@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    text-decoration: underline;
+}
+.wrapper {
+    overflow-y: hidden;
+}
+.line {
+    border-bottom: 1px solid rgb(216, 216, 216);
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    z-index: -1;
+    padding: 20px;
+}
+h1, h2, h3, h4, h5, h6, th {
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+}
+body {
+    background: rgb(205, 232, 255);
+    background: linear-gradient(
+      177deg,
+      rgba(129, 196, 255, 0.227) 0%,
+      rgba(255, 249, 236, 1) 45%
+    );
+    color: rgb(100, 100, 100);
+}
+header {
+   width: 100%;
+   height: fit-content;
+   border-bottom: 1px solid rgb(216, 216, 216); 
+   display: flex;
+   flex-direction: row;
+}
+.main-info {
+    width: 30%;
+    height: fit-content;
+    border-right: 1px solid rgb(216, 216, 216);
+    padding: 30px 60px;
+}
+.secondary-info {
+    width: 70%;
+    padding: 30px 60px;
+}
+.main-info h1 {
+    margin-top: 20px;
+}
+.thumbnail {
+    height: 200px;
+    width: 200px;
+    z-index: 1;
+    border-radius: 50%;
+    background: linear-gradient( to top, rgba(255, 125, 125, 0.226), rgba(0, 0, 0,0)), url('assets/images/profile.jpg');
+    background-size: cover;
+    box-shadow: 0 20px 40px rgba(0,0,0,.1);
+    animation: floatImage ease-in-out 7s infinite, scale 1.5s ease-out;    
+}
+.secondary-info h1 {
+    font-family: 'Roboto Mono', sans-serif;
+}
+.secondary-info address {
+    margin-top: 50px;
+}
+.secondary-info address a {
+    display: block;
+}
+main {
+    display: block;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 100px;
+}
+aside {
+    width: 30%;
+    height: fit-content;
+    border-right: 1px solid rgb(216, 216, 216);
+    
+}
+table {
+    border-collapse: collapse;
+    width: 70%;
+    padding: 30px 60px;
+  }
+  th {
+      font-size: 24px;
+  }
+  td {
+      border: 1px solid rgb(216, 216, 216);
+  }
+  td:nth-child(odd) {
+      border-left: none;
+  }
+  td p {
+      font-family: 'Roboto Mono';
+  }
+  td, th {
+    text-align: left;
+    padding: 30px 20px;
+    font-family: 'Roboto Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  th {
+      font-family: 'Yeseva One';
+  }
+  .title {
+      text-transform: uppercase;
+      font-family: inherit;
+      font-size: 14px;
+  }
+  .title:first-child {
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  aside .section {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    padding: 30px 60px;
+  }
+  aside .section h2 {
+      padding-bottom: 20px;
+  }
+  .info {
+      padding-bottom: 5px;
+  }
+  .info:nth-child(2){
+      font-weight: bold;
+      text-transform: uppercase;
+  }
+  .skills {
+      padding-bottom: 30px;
+  }
+  .skills ul {
+      list-style: none;
+      margin-top: 10px;
+  }
+  .skills ul li {
+      padding-bottom: 10px;
+  }
+  
+  .box {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 50;
+    width: 50%;}
+    
+    #box1 {
+      background: #fff;
+      right: 50%;
+    }
+    
+    #box2 {
+      background-color: #ffffff;
+      right: 0;
+    }
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    .main-info {
+        width: 100%;
+    }
+    .secondary-info {
+        width: 100%;
+    }
+    main {
+        flex-direction: column;
+    }
+    aside {
+        width: 100%;
+    }
+    table {
+        width: 100%;
+    }
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translate(-2%, 1%);
+    }
+    33% {
+        transform: translate(0%, 0%);
+    }
+    66% {
+        transform: translate(2%, -1%);
+    }
+    100% {
+        transform: translate(-2%, 1%);
+    }
+}
