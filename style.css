@@ -29,7 +29,7 @@ body {
     background: linear-gradient(
       177deg,
       rgba(129, 196, 255, 0.227) 0%,
-      rgba(255, 249, 236, 1) 45%
+      rgba(255, 249, 236, 1) 35%
     );
     color: rgb(100, 100, 100);
 }
@@ -147,7 +147,7 @@ table {
   }
   
   .box {
-    height: 100vh;
+    height: 1298px;
     position: absolute;
     top: 0;
     z-index: 50;
@@ -162,9 +162,35 @@ table {
       background-color: #ffffff;
       right: 0;
     }
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    .links a{
+        border: 2px solid rgb(135, 135, 135);
+        width: fit-content;
+        padding: 10px 16px;
+        margin: 0px 20px;
+    }
+    .links a img{
+        width: 100px;
+        height: 30px;
+    }
 @media(max-width: 768px) {
+    .box {
+        height: 2283px;
+    }
     header {
         flex-direction: column;
+    }
+    .links {
+        flex-direction: column;
+    }
+    .links a{
+        margin: 10px auto;
+        
     }
     .main-info {
         width: 100%;
@@ -174,6 +200,13 @@ table {
         width: 100%;
         padding: 0px 20px;
         padding-bottom: 30px;
+    }
+    .secondary-info h1 {
+        font-size: 20px;
+    }
+    .secondary-info h1 img{
+        position: relative;
+        top: 5px;
     }
     .main-info h1 {
         margin-top: 50px;
