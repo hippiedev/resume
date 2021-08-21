@@ -173,10 +173,13 @@ table {
         padding-bottom: 30px;
     }
     .links a{
-        border: 2px solid rgb(135, 135, 135);
+        border: 1px solid rgb(216, 216, 216);
         width: fit-content;
         padding: 10px 16px;
-        margin: 0px 20px;
+    }
+    .links a:nth-child(2) {
+        border-left: none;
+        border-right: none;
     }
     .links a img{
         width: 100px;
@@ -191,7 +194,7 @@ table {
     }
     #line {
         display: block;
-        width: 800px;
+        width: 1200px;
         border: 1px solid;
         border-top: none;
         border-left: none;
@@ -199,18 +202,22 @@ table {
         border-image-slice: 3;
         border-width: 0.2px;
         border-image-source:linear-gradient(177deg, rgba(216, 216, 216, 1) 60%, rgba(0 ,0, 0, 0));
-        height: 40px;
+        height: 50px;
         transform: rotate(90deg);
         position: absolute;
-        left: -70px;
+        left: -270px;
         top: 250px;
     }
     .links {
         flex-direction: column;
     }
     .links a{
-        margin: 10px auto;
-        
+        margin: 0px auto; 
+    }
+    .links a:nth-child(2) {
+        border: 1px solid rgb(216, 216, 216);
+        border-top: none;
+        border-bottom: none;
     }
     .main-info {
         width: 100%;
