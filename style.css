@@ -193,10 +193,13 @@ table {
         display: block;
         width: 800px;
         border: 1px solid;
-        border-image-slice: 1;
-        border-width: 1px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-image-slice: 3;
+        border-width: 0.2px;
         border-image-source:linear-gradient(177deg, rgba(216, 216, 216, 1) 60%, rgba(0 ,0, 0, 0));
-        height: 1px;
+        height: 40px;
         transform: rotate(90deg);
         position: absolute;
         left: -70px;
