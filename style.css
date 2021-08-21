@@ -201,11 +201,11 @@ table {
         border-right: none;
         border-image-slice: 3;
         border-width: 0.2px;
-        border-image-source:linear-gradient(177deg, rgba(216, 216, 216, 1) 60%, rgba(0 ,0, 0, 0));
+        border-image-source:linear-gradient(177deg, rgba(216, 216, 216, 0.6) 60%, rgba(0 ,0, 0, 0));
         height: 50px;
         transform: rotate(90deg);
         position: absolute;
-        left: -270px;
+        left: -360px;
         top: 250px;
     }
     .links {
