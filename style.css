@@ -191,6 +191,16 @@ table {
     }
     #line {
         display: block;
+        width: 800px;
+        border: 1px solid;
+        border-image-slice: 1;
+        border-width: 1px;
+        border-image-source:linear-gradient(177deg, rgba(216, 216, 216, 1) 60%, rgba(0 ,0, 0, 0));
+        height: 1px;
+        transform: rotate(90deg);
+        position: absolute;
+        left: -70px;
+        top: 250px;
     }
     .links {
         flex-direction: column;
