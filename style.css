@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 a {
     text-decoration: none;
@@ -11,6 +11,9 @@ a {
 }
 .wrapper {
     overflow-y: hidden;
+}
+#line {
+    display: none;
 }
 .line {
     border-bottom: 1px solid rgb(216, 216, 216);
@@ -21,17 +24,18 @@ a {
     padding: 20px;
 }
 h1, h2, h3, h4, h5, h6, th {
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
     font-weight: normal;
 }
 body {
     background: rgb(205, 232, 255);
     background: linear-gradient(
       177deg,
-      rgba(129, 196, 255, 0.227) 0%,
-      rgba(255, 249, 236, 1) 35%
+      rgba(255, 150, 101, 0.227) 0%,
+      rgba(255, 249, 236, 1) 25%
     );
     color: rgb(100, 100, 100);
+    overflow-x: hidden;
 }
 header {
    width: 100%;
@@ -58,7 +62,7 @@ header {
     width: 200px;
     z-index: 1;
     border-radius: 50%;
-    background: linear-gradient( to top, rgba(255, 125, 125, 0.226), rgba(0, 0, 0,0)), url('assets/images/profile.jpg');
+    background: url('assets/images/profile.jpg');
     background-size: cover;
     box-shadow: 0 20px 40px rgba(0,0,0,.1);
     animation: floatImage ease-in-out 7s infinite, scale 1.5s ease-out;    
@@ -184,6 +188,9 @@ table {
     }
     header {
         flex-direction: column;
+    }
+    #line {
+        display: block;
     }
     .links {
         flex-direction: column;
