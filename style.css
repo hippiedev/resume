@@ -65,7 +65,7 @@ header {
     background: url('assets/images/profile.jpg');
     background-size: cover;
     box-shadow: 0 20px 40px rgba(0,0,0,.1);
-    animation: floatImage ease-in-out 7s infinite, scale 1.5s ease-out;    
+    animation: floatImage ease-in-out 7s infinite, scale 2.3s ease-out;    
 }
 .secondary-info h1 {
     font-family: 'Roboto Mono', monospace;
@@ -276,5 +276,16 @@ table {
     }
     100% {
         transform: translate(-2%, 1%);
+    }
+}
+
+@keyframes scale {
+    0% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
     }
 }
