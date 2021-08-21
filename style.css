@@ -68,7 +68,12 @@ header {
     animation: floatImage ease-in-out 7s infinite, scale 1.5s ease-out;    
 }
 .secondary-info h1 {
-    font-family: 'Roboto Mono', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+.secondary-info h1 img {
+    transform: scale(0.7);
+    position: relative;
+    top: 13px;
 }
 .secondary-info address {
     margin-top: 50px;
@@ -208,6 +213,12 @@ table {
         left: -360px;
         top: 250px;
     }
+    #line:nth-child(1) {
+        left: -500px;
+    }
+    #line:nth-child(2) {
+        left: -450px;
+    }
     .links {
         flex-direction: column;
     }
@@ -233,7 +244,8 @@ table {
     }
     .secondary-info h1 img{
         position: relative;
-        top: 5px;
+        top: 15px;
+        transform: scale(0.6);
     }
     .main-info h1 {
         margin-top: 50px;
