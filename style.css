@@ -241,6 +241,8 @@ table {
     }
     .secondary-info h1 {
         font-size: 20px;
+        position: relative;
+        top: -10px;
     }
     .secondary-info h1 img{
         position: relative;

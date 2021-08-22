@@ -11,7 +11,6 @@ timeline
     ease: Power3.easeOut,
     delay: "0",
   })
-  .fromTo("#thumbnail", 0.5, {transform: 'scale(0)'}, {transform: 'scale(1)'})
   .fromTo(
     "#text",
     0.5,
